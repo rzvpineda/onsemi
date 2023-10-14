@@ -8,4 +8,10 @@ export default makeStyles(() => ({
     navbarBtn: {
         "background-color": colors.onsemiDeepGrey
     },
+    navTitle: {
+        "background-color": colors.onsemiDeepGrey
+    },
+    navParag: {
+        "color": colors.onsemiGrey
+    },
 }))

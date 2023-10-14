@@ -10,7 +10,7 @@ const onsemitheme = createTheme({
       main: '#ff7920',
     },
     secondary: {
-      main: '#f50057',
+      main: '#ff7920',
     }
   },
 })
