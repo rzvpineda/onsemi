@@ -14,4 +14,8 @@ export default makeStyles(() => ({
     navParag: {
         "color": colors.onsemiGrey
     },
+    iframeWidth: {
+        "width": "1000",
+        "height": "1000"
+    }
 }))

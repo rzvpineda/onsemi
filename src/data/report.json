@@ -1,0 +1,147 @@
+[
+    {
+      "ParentLink": "ETC",
+      "Reports": [
+        {
+          "id": "1",
+          "ReportName": "Breaktime Monitoring",
+          "ReportDetails": "ONSEMI employee's break time monitoring report.",
+          "ReportLink": "https://10ay.online.tableau.com/#/site/onsemi/views/Breaktime_Monitoring_System/BM_dashboard"
+        },
+        {
+          "id": "5",
+          "ReportName": "SMP8 Lagging Lots",
+          "ReportDetails": "Shipping lagging lots.",
+          "ReportLink": "https://10ay.online.tableau.com/#/site/onsemi/views/SMP8LaggingLots/SMP8LaggingLotsDashboard"
+        },
+        {
+          "id": "7",
+          "ReportName": "Probe Yield Monitoring",
+          "ReportDetails": "Probe Yield Monitoring.",
+          "ReportLink": "https://10ay.online.tableau.com/#/site/onsemi/views/NS24ProbeYieldMonitoringReport/NS24ProbeYieldMonitoringDashboard"
+        },
+        {
+          "id": "11",
+          "ReportName": "Consolidated Hold Lot Reports",
+          "ReportDetails": "The Consolidated Hold Lot Reports provide a comprehensive overview of all the hold lots within a manufacturing or production environment. Hold lots refer to batches or units of products that have been placed on hold due to various reasons, such as quality issues, compliance concerns, or pending inspections.<br/>This report aims to consolidate information from different departments or teams responsible for managing hold lots. It provides a centralized and structured view of all the hold lots, their respective statuses, and the actions being taken to address the issues associated with them.",
+          "ReportLink": "https://10ay.online.tableau.com/#/site/onsemi/views/ONSEMIHoldLotsReport/ONSEMIHoldLotsReport"
+        },
+        {
+          "id": "12",
+          "ReportName": "GENESIS MPN label history (CAMSTAR, GENESIS & PRISM)",
+          "ReportDetails": "The GENESIS MPN Label History Report offers a detailed Report on Gensis Box MPN Serial No and Reel Serial No per lot for easily traceability of lots",
+          "ReportLink": "https://10ay.online.tableau.com/#/site/onsemi/views/GENESISMPNLABELHISTORY/GENESISMPNLabelHistory"
+        },
+        {
+          "id": "13",
+          "ReportName": "Consolidated Yield Report (CAMSTAR, GENESIS & PRISM)",
+          "ReportDetails": "The Consolidated Daily Yield Report analyzes daily yield per process step and use as a tool for defect analysis and yield improvement per log point. This report also serves as heads-up for potential hits that will impact the total Assy yield.",
+          "ReportLink": "https://10ay.online.tableau.com/#/site/onsemi/views/CONSOLIDATED_YIELD_REPORT/CAMSTAR"
+        },
+        {
+          "id": "16",
+          "ReportName": "Tarlac Marking Code History",
+          "ReportDetails": "Monitoring of Tarlac's marking per lot.",
+          "ReportLink": "https://10ay.online.tableau.com/#/site/onsemi/views/TarlacMarkingCode/MARKINGCODEforTARLAC"
+        },
+        {
+          "id": "17",
+          "ReportName": "Device Weight Records",
+          "ReportDetails": "Inquiry and monitoring of lots that transacted in device weighing tool.",
+          "ReportLink": "https://10ay.online.tableau.com/#/site/onsemi/views/DEVICEWEIGHT/DEVICEWEIGHTRECORDS"
+        }
+      ]
+    },
+    {
+      "ParentLink": "Atom",
+      "Reports": [
+        {
+          "id": "2",
+          "ReportName": "ATOM Report",
+          "ReportDetails": "ATOM Transaction's Report.",
+          "ReportLink": "https://10ay.online.tableau.com/#/site/onsemi/views/AtomReport/ATOMReportDashboard"
+        }
+      ]
+    },
+    {
+      "ParentLink": "Genesis",
+      "Reports": [
+        {
+          "id": "3",
+          "ReportName": "Genesis Pending Trak",
+          "ReportDetails": "GENESIS Pending Transactions Report.",
+          "ReportLink": "https://10ay.online.tableau.com/#/site/onsemi/views/PendingTRAK/Dashboard1"
+        },
+        {
+          "id": "4",
+          "ReportName": "Genesis WIP report",
+          "ReportDetails": "GENESIS WIP monitoring report.",
+          "ReportLink": "https://10ay.online.tableau.com/#/site/onsemi/views/GENESISWIPReport_16652802786440/GENESISWIPReportDashboard"
+        },
+        {
+          "id": "8",
+          "ReportName": "GENESIS Cycle Time Report",
+          "ReportDetails": "GENESIS lots Cycle time monitoring report.",
+          "ReportLink": "https://10ay.online.tableau.com/#/site/onsemi/views/GENESIS_CYCLETIME_REPORT/REPORT_DS?:iid=1"
+        },
+        {
+          "id": "9",
+          "ReportName": "GENESIS Reroute History",
+          "ReportDetails": "GENESIS monitoring of rerouted lots.",
+          "ReportLink": "https://10ay.online.tableau.com/#/site/onsemi/views/GENESISREROUTEDATA/GENESISREROUTEDATA"
+        },
+        {
+          "id": "15",
+          "ReportName": "GENESIS Weighing Transaction History",
+          "ReportDetails": "GENESIS report for lots that transacted in weighting tool.",
+          "ReportLink": "https://10ay.online.tableau.com/#/site/onsemi/views/Weighing_Transaction/WeighingTransaction"
+        }
+      ]
+    },
+    {
+      "ParentLink": "Camstar",
+      "Reports": [
+        {
+          "id": "6",
+          "ReportName": "CAMSTAR WIP Inventory",
+          "ReportDetails": "CAMSTAR Inventory monitoring.",
+          "ReportLink": "https://10ay.online.tableau.com/#/site/onsemi/views/CAMSTARWIPInventory/CAMSTARWIPInventoryDashboard"
+        },
+        {
+          "id": "10",
+          "ReportName": "CAMSTAR WFR_MNT to WFR_SAW Transaction Report",
+          "ReportDetails": "CAMSTAR monitoring of lots transacted from wafer mount to wafer saw.",
+          "ReportLink": "https://10ay.online.tableau.com/#/site/onsemi/views/WFR_MNTToWFR_SAW/WFR_MNTToWFR_SAW"
+        },
+        {
+          "id": "14",
+          "ReportName": "CAMSTAR CMA records",
+          "ReportDetails": "CAMSTAR machines CMA records.",
+          "ReportLink": "https://10ay.online.tableau.com/#/site/onsemi/views/CAMSTARCMAAlarms/CAMSTARCMA"
+        }
+      ]
+    },
+    {
+      "ParentLink": "Prism",
+      "Reports": [
+        {
+          "id": "18",
+          "ReportName": "PRISM FTM LSI OEE",
+          "ReportDetails": "Compilation of TEST 1 - TEST 3 OEE",
+          "ReportLink": "https://10ay.online.tableau.com/#/site/onsemi/views/FTMLSIOEE/FTMLSIOEE"
+        },
+        {
+          "id": "19",
+          "ReportName": "PRISM Lot A to B History",
+          "ReportDetails": "Transaction History of PRISM lots from Lot A to Lot B1 and B2.",
+          "ReportLink": "https://10ay.online.tableau.com/#/site/onsemi/views/LotAtoB/PRISMLotAtoB"
+        },
+        {
+          "id": "20",
+          "ReportName": "PRISM Carrier Inquiry and History",
+          "ReportDetails": "Inquiry and monitoring of carriers transacted in PRISM.",
+          "ReportLink": "https://10ay.online.tableau.com/#/site/onsemi/views/PRISMCARRIERTRANSACTION/PRISMCARRIERINQUIRY?:iid=3"
+        }
+      ]
+    }
+  ]
