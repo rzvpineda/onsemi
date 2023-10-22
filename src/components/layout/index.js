@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import makeStyles from './styles'
 import data from '../../data/report.json'
+import { NavLink, Link } from "react-router-dom";
 import {
     Drawer,
     // Typography,
@@ -17,7 +18,7 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 
 
-function Layout({ children }) {
+function Layout({children}) {
     const classes = makeStyles();
     const [open, setOpen] = useState();
 
@@ -26,7 +27,9 @@ function Layout({ children }) {
         if (setOpen === index) {
             setOpen("")
         }
-
+        if(open === index) {
+            setOpen("")
+        }
         else {
             setOpen(index)
         }
@@ -38,28 +41,34 @@ function Layout({ children }) {
         // sidebar
         <div className={classes.root}>
             <Drawer
-                // className={classes.drawer}
+                className={classes.textColor}
                 variant="permanent"
                 anchor="left"
-                classes={{ paper: classes.drawerPaper }}
+                // classes={{ paper: classes.drawerPaper }}
+                PaperProps={{
+                    sx: { width: "300px" },
+                  }}
             >
-                <ListSubheader component="div" id="nested-list-subheader">
-                    MOS Tableau Reports
+                <ListSubheader component="div" id="nested-list-subheader" >
+                   <Link to={'/'} className={classes.title}>MOS Tableau Reports </Link> 
                 </ListSubheader>
                 <List>
                     {data.map((reportData, index) =>
                         <>
-                        {/* <Route path="/searched/:search" element={<Searched />} /> */}
                             <ListItemButton
                                 onClick={() => handleCollapse(index)}
-                                key={reportData.ParentLink}>
-                                <ListItemText primary={reportData.ParentLink}>{index === open ? <ExpandLessIcon /> : <ExpandMoreIcon />}</ListItemText>
+                                key={index}>
+                                <ListItemText className={classes.icons} key={index} primary={reportData.ParentLink}>
+                                    {index === open ? <ExpandLessIcon /> : <ExpandMoreIcon /> }
+                                </ListItemText>
                             </ListItemButton>
                             {reportData.Reports.map((report) => (
                                 <Collapse in={index === open} timeout="auto" key={report.id}>
-                                    <List component="div" disablePadding>
+                                    <List component="div" disablePadding className={`${classes.linkTag} `}>
                                         <ListItemButton sx={{ pl: 4 }}  >
-                                            <ListItemText noWrap primary={report.ReportName} />
+                                            {/* <ListItemText primary={report.ReportName} /> */}
+                                            <NavLink className={`${classes.linkTag} `} to={'/content/'+ report.id}>{report.ReportName}</NavLink>
+                                            {/* ${classes.isAcTive} => (isAcTive ? "active" : "inactive")  */}
                                         </ListItemButton>
                                     </List>
                                 </Collapse>

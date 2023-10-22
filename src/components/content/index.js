@@ -13,16 +13,16 @@ function Content() {
     return (
         // <Container>
         <div>
-            {/* <Typography variant='h3'>
+            <Typography variant='h3'>
                 Report Title
             </Typography>
             <Typography variant='body2'>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur unde suscipit, quam beatae rerum inventore consectetur, neque doloribus, cupiditate numquam dignissimos laborum fugiat deleniti? Eum quasi quidem quibusdam.
-            </Typography> */}
+            </Typography>
             {/* <div dangerouslySetInnerHTML={{__html : 
 
             </div> */}
-            {/* <iframe 
+            <iframe 
             className={classes.iframeCont} title="Tableua"
             width="98%"
             height="800"
@@ -30,7 +30,7 @@ function Content() {
             allow-same-origin = "true"
             // src="https://www.google.com/search?igu=1" 
             src='http://10ay.online.tableau.com/#/site/onsemi/views/PRISMCARRIERTRANSACTION/PRISMCARRIERINQUIRY?:iid=3?'
-            ></iframe> */}
+            ></iframe>
         </div>
         // </Container >
     )

@@ -1,9 +1,8 @@
 import React from "react";
-// import Navbar from "./components/navbar";
 import Content from "./components/content/index";
 import Layout from "./components/layout/index";
 import { createTheme, ThemeProvider, CssBaseline } from "@mui/material";
-import { Router, Route } from "react-router-dom";
+import { Routes, Route, BrowserRouter, useLocation } from "react-router-dom";
 
 
 const onsemitheme = createTheme({
@@ -18,18 +17,19 @@ const onsemitheme = createTheme({
 })
 
 function App() {
-
+  // const location = useLocation();
   return (
     <ThemeProvider theme={onsemitheme}>
       <CssBaseline />
       <div className="App">
-        {/* <Router> */}
-          <Layout>
-            {/* <Route exact path="/"> */}
-              <Content />
-              {/* </Route> */}
+        <BrowserRouter >
+          <Layout >
+            <Routes>
+              {/* <Route path="/" element={<Content />} /> */}
+              <Route path="/content/:type" element={<Content />} />
+            </Routes>
           </Layout>
-        {/* </Router> */}
+        </BrowserRouter>
       </div>
     </ThemeProvider>
   );
