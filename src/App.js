@@ -1,8 +1,9 @@
 import React from "react";
 import Content from "./components/content/index";
 import Layout from "./components/layout/index";
+import Login from "./pages/login/index";
 import { createTheme, ThemeProvider, CssBaseline } from "@mui/material";
-import { Routes, Route, BrowserRouter, useLocation } from "react-router-dom";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
 
 
 const onsemitheme = createTheme({
@@ -17,7 +18,6 @@ const onsemitheme = createTheme({
 })
 
 function App() {
-  // const location = useLocation();
   return (
     <ThemeProvider theme={onsemitheme}>
       <CssBaseline />
@@ -27,6 +27,7 @@ function App() {
             <Routes>
               {/* <Route path="/" element={<Content />} /> */}
               <Route path="/content/:type" element={<Content />} />
+              <Route path="/login" element={<Login />} />
             </Routes>
           </Layout>
         </BrowserRouter>

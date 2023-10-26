@@ -8,7 +8,12 @@ const drawerWidth = 240
 export default makeStyles(() => ({
   mainBg: {
     backgroundColor: "#f9f9f9",
-    width: "100%",
+    width: "100vw",
+    marginLeft:"15% !Important"
+    // display: "flex",
+    // justifyContent: "flex-start",
+    // textAlign: "center",
+
   },
   drawer: {
     width: drawerWidth,
@@ -18,6 +23,7 @@ export default makeStyles(() => ({
   },
   root: {
     display: "flex",
+    flexDirection:"row"
   },
   linkTag:{
     color: "#000000",

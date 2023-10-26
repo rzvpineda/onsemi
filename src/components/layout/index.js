@@ -9,7 +9,9 @@ import {
     ListItemText,
     ListItemButton,
     Collapse,
-    ListSubheader
+    ListSubheader,
+    Box,
+    // Container
 
 } from '@mui/material'
 
@@ -17,10 +19,11 @@ import ExpandLessIcon from '@mui/icons-material/ExpandLess';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 
-
+ 
 function Layout({children}) {
     const classes = makeStyles();
     const [open, setOpen] = useState();
+    // const [clickLink, setclickLink] = useState();
 
     const handleCollapse = (index) => {
         // setOpen(!open);
@@ -37,14 +40,13 @@ function Layout({children}) {
     };
 
     return (
-
         // sidebar
-        <div className={classes.root}>
+        <Box className={classes.root} sx={{ display: 'flex' }}>
             <Drawer
                 className={classes.textColor}
                 variant="permanent"
                 anchor="left"
-                // classes={{ paper: classes.drawerPaper }}
+                // classes={{ paper: classes.drawerPaper }} 
                 PaperProps={{
                     sx: { width: "300px" },
                   }}
@@ -66,9 +68,8 @@ function Layout({children}) {
                                 <Collapse in={index === open} timeout="auto" key={report.id}>
                                     <List component="div" disablePadding className={`${classes.linkTag} `}>
                                         <ListItemButton sx={{ pl: 4 }}  >
-                                            {/* <ListItemText primary={report.ReportName} /> */}
-                                            <NavLink className={`${classes.linkTag} `} to={'/content/'+ report.id}>{report.ReportName}</NavLink>
-                                            {/* ${classes.isAcTive} => (isAcTive ? "active" : "inactive")  */}
+                                            <NavLink className={`${classes.linkTag} `} to={'/content/'+ report.id} >{report.ReportName}</NavLink>
+                                            {/* ${classes.isAcTive} => (isAcTive ? "active" : "inactive")   onClick={handleClick} onContextMenu={handleClick}*/}
                                         </ListItemButton>
                                     </List>
                                 </Collapse>
@@ -76,13 +77,12 @@ function Layout({children}) {
                         </>
                     )}
                 </List>
-
             </Drawer>
-            <div className={classes.mainBg}>
+            <Box className={classes.mainBg}>
                 {/* the children here are the modules wrap in <Layout> in app js */}
                 {children}
-            </div>
-        </div>
+            </Box>
+        </Box>
     )
 }
 

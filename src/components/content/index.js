@@ -1,38 +1,62 @@
-import { Container, Typography, Button } from '@mui/material'
+import { Typography, Container } from '@mui/material'
 // import { Button } from '@material-ui/core';
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import makeStyles from './styles';
+import { useParams } from 'react-router-dom'
+import data from '../../data/report.json'
+import { Link } from "react-router-dom";
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
 function Content() {
-    // const customColors = {
-    //     onsemiGrey: "#b6babf",
-    //     onsemiOrange: "#ff7920",
-    //   };
+    let params = useParams();
     const classes = makeStyles();
+    // const [reportResult, setReportResult] = useState([])
+
+    useEffect(() => {
+        // getReport(params.type);
+        // console.log(params.type)
+    }, [params.type])
+
+
+    var filtered = data.reduce((result, item) => result.concat(item.Reports), []).filter(report => report.id === params.type);
+    // console.log(filtered[0]);
 
     return (
-        // <Container>
-        <div>
-            <Typography variant='h3'>
-                Report Title
+        <Container maxWidth="xl">
+            <Typography variant='h3' sx={{ marginBottom: '10px' }}>
+                {filtered[0].ReportName}
             </Typography>
-            <Typography variant='body2'>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur unde suscipit, quam beatae rerum inventore consectetur, neque doloribus, cupiditate numquam dignissimos laborum fugiat deleniti? Eum quasi quidem quibusdam.
+            <Typography variant='body2' sx={{ marginBottom: '10px' }}>
+                {filtered[0].ReportDetails}
             </Typography>
-            {/* <div dangerouslySetInnerHTML={{__html : 
+            <Link className={classes.linkBtn} target="_blank" to={filtered[0].ReportLink} >View Full Page</Link>
+            <p></p>
+            <div dangerouslySetInnerHTML={{
+                __html: `
+                    <iframe
+                    className=${classes.iframeCont} title="Tableau"
+                    width="100%"
+                    height="800"
+                    frameBorder="1"
+                    allowfullscreen
+                    src="${filtered[0].ReportLink}"
+                    ></iframe>`
+            }}>
+            </div>
 
-            </div> */}
-            <iframe 
-            className={classes.iframeCont} title="Tableua"
-            width="98%"
-            height="800"
-            frameBorder="1"
-            allow-same-origin = "true"
-            // src="https://www.google.com/search?igu=1" 
-            src='http://10ay.online.tableau.com/#/site/onsemi/views/PRISMCARRIERTRANSACTION/PRISMCARRIERINQUIRY?:iid=3?'
-            ></iframe>
-        </div>
-        // </Container >
+            {/* <iframe
+                className={classes.iframeCont} title="Tableua"
+                width="100%"
+                height="800"
+                frameBorder="1"
+                allowfullscreen
+                // allow-same-origin="true"
+                // src="https://www.google.com/search?igu=1" 
+                src={filtered[0].ReportLink}
+            ></iframe> */}
+
+            {/* <Embed src={filtered[0].ReportLink} width="100%" height="800px" /> */}
+        </Container>
     )
 }
 
