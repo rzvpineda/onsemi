@@ -52,7 +52,7 @@ function Layout({children}) {
                   }}
             >
                 <ListSubheader component="div" id="nested-list-subheader" >
-                   <Link to={'/'} className={classes.title}>MOS Tableau Reports </Link> 
+                   <Link to={'/'} className={classes.title}>Tableau Reports </Link> 
                 </ListSubheader>
                 <List>
                     {data.map((reportData, index) =>

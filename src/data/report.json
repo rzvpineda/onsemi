@@ -1,57 +1,5 @@
 [
-    {
-      "ParentLink": "ETC",
-      "Reports": [
-        {
-          "id": "E1",
-          "ReportName": "Breaktime Monitoring",
-          "ReportDetails": "ONSEMI employee's break time monitoring report.",
-          "ReportLink": "https://10ay.online.tableau.com/#/site/onsemi/views/Breaktime_Monitoring_System/BM_dashboard"
-        },
-        {
-          "id": "E2",
-          "ReportName": "SMP8 Lagging Lots",
-          "ReportDetails": "Shipping lagging lots.",
-          "ReportLink": "https://10ay.online.tableau.com/#/site/onsemi/views/SMP8LaggingLots/SMP8LaggingLotsDashboard"
-        },
-        {
-          "id": "E3",
-          "ReportName": "Probe Yield Monitoring",
-          "ReportDetails": "Probe Yield Monitoring.",
-          "ReportLink": "https://10ay.online.tableau.com/#/site/onsemi/views/NS24ProbeYieldMonitoringReport/NS24ProbeYieldMonitoringDashboard"
-        },
-        {
-          "id": "E4",
-          "ReportName": "Consolidated Hold Lot Reports",
-          "ReportDetails": "The Consolidated Hold Lot Reports provide a comprehensive overview of all the hold lots within a manufacturing or production environment. Hold lots refer to batches or units of products that have been placed on hold due to various reasons, such as quality issues, compliance concerns, or pending inspections.<br/>This report aims to consolidate information from different departments or teams responsible for managing hold lots. It provides a centralized and structured view of all the hold lots, their respective statuses, and the actions being taken to address the issues associated with them.",
-          "ReportLink": "https://10ay.online.tableau.com/#/site/onsemi/views/ONSEMIHoldLotsReport/ONSEMIHoldLotsReport"
-        },
-        {
-          "id": "E5",
-          "ReportName": "GENESIS MPN label history (CAMSTAR, GENESIS & PRISM)",
-          "ReportDetails": "The GENESIS MPN Label History Report offers a detailed Report on Gensis Box MPN Serial No and Reel Serial No per lot for easily traceability of lots",
-          "ReportLink": "https://10ay.online.tableau.com/#/site/onsemi/views/GENESISMPNLABELHISTORY/GENESISMPNLabelHistory"
-        },
-        {
-          "id": "E6",
-          "ReportName": "Consolidated Yield Report (CAMSTAR, GENESIS & PRISM)",
-          "ReportDetails": "The Consolidated Daily Yield Report analyzes daily yield per process step and use as a tool for defect analysis and yield improvement per log point. This report also serves as heads-up for potential hits that will impact the total Assy yield.",
-          "ReportLink": "https://10ay.online.tableau.com/#/site/onsemi/views/CONSOLIDATED_YIELD_REPORT/CAMSTAR"
-        },
-        {
-          "id": "E7",
-          "ReportName": "Tarlac Marking Code History",
-          "ReportDetails": "Monitoring of Tarlac's marking per lot.",
-          "ReportLink": "https://10ay.online.tableau.com/#/site/onsemi/views/TarlacMarkingCode/MARKINGCODEforTARLAC"
-        },
-        {
-          "id": "E8",
-          "ReportName": "Device Weight Records",
-          "ReportDetails": "Inquiry and monitoring of lots that transacted in device weighing tool.",
-          "ReportLink": "https://10ay.online.tableau.com/#/site/onsemi/views/DEVICEWEIGHT/DEVICEWEIGHTRECORDS"
-        }
-      ]
-    },
+   
     {
       "ParentLink": "Atom",
       "Reports": [
@@ -122,7 +70,7 @@
       ]
     },
     {
-      "ParentLink": "Prism",
+      "ParentLink": "PRISM",
       "Reports": [
         {
           "id": "P1",
@@ -141,6 +89,59 @@
           "ReportName": "PRISM Carrier Inquiry and History",
           "ReportDetails": "Inquiry and monitoring of carriers transacted in PRISM.",
           "ReportLink": "https://10ay.online.tableau.com/#/site/onsemi/views/PRISMCARRIERTRANSACTION/PRISMCARRIERINQUIRY?:iid=3"
+        }
+      ]
+    },
+    {
+      "ParentLink": "Others",
+      "Reports": [
+        {
+          "id": "E1",
+          "ReportName": "Breaktime Monitoring",
+          "ReportDetails": "ONSEMI employee's break time monitoring report.",
+          "ReportLink": "https://10ay.online.tableau.com/#/site/onsemi/views/Breaktime_Monitoring_System/BM_dashboard"
+        },
+        {
+          "id": "E2",
+          "ReportName": "SMP8 Lagging Lots",
+          "ReportDetails": "Shipping lagging lots.",
+          "ReportLink": "https://10ay.online.tableau.com/#/site/onsemi/views/SMP8LaggingLots/SMP8LaggingLotsDashboard"
+        },
+        {
+          "id": "E3",
+          "ReportName": "Probe Yield Monitoring",
+          "ReportDetails": "Probe Yield Monitoring.",
+          "ReportLink": "https://10ay.online.tableau.com/#/site/onsemi/views/NS24ProbeYieldMonitoringReport/NS24ProbeYieldMonitoringDashboard"
+        },
+        {
+          "id": "E4",
+          "ReportName": "Consolidated Hold Lot Reports",
+          "ReportDetails": "The Consolidated Hold Lot Reports provide a comprehensive overview of all the hold lots within a manufacturing or production environment. Hold lots refer to batches or units of products that have been placed on hold due to various reasons, such as quality issues, compliance concerns, or pending inspections.<br/>This report aims to consolidate information from different departments or teams responsible for managing hold lots. It provides a centralized and structured view of all the hold lots, their respective statuses, and the actions being taken to address the issues associated with them.",
+          "ReportLink": "https://10ay.online.tableau.com/#/site/onsemi/views/ONSEMIHoldLotsReport/ONSEMIHoldLotsReport"
+        },
+        {
+          "id": "E5",
+          "ReportName": "GENESIS MPN label history (CAMSTAR, GENESIS & PRISM)",
+          "ReportDetails": "The GENESIS MPN Label History Report offers a detailed Report on Gensis Box MPN Serial No and Reel Serial No per lot for easily traceability of lots",
+          "ReportLink": "https://10ay.online.tableau.com/#/site/onsemi/views/GENESISMPNLABELHISTORY/GENESISMPNLabelHistory"
+        },
+        {
+          "id": "E6",
+          "ReportName": "Consolidated Yield Report (CAMSTAR, GENESIS & PRISM)",
+          "ReportDetails": "The Consolidated Daily Yield Report analyzes daily yield per process step and use as a tool for defect analysis and yield improvement per log point. This report also serves as heads-up for potential hits that will impact the total Assy yield.",
+          "ReportLink": "https://10ay.online.tableau.com/#/site/onsemi/views/CONSOLIDATED_YIELD_REPORT/CAMSTAR"
+        },
+        {
+          "id": "E7",
+          "ReportName": "Tarlac Marking Code History",
+          "ReportDetails": "Monitoring of Tarlac's marking per lot.",
+          "ReportLink": "https://10ay.online.tableau.com/#/site/onsemi/views/TarlacMarkingCode/MARKINGCODEforTARLAC"
+        },
+        {
+          "id": "E8",
+          "ReportName": "Device Weight Records",
+          "ReportDetails": "Inquiry and monitoring of lots that transacted in device weighing tool.",
+          "ReportLink": "https://10ay.online.tableau.com/#/site/onsemi/views/DEVICEWEIGHT/DEVICEWEIGHTRECORDS"
         }
       ]
     }

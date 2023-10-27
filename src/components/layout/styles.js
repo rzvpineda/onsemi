@@ -9,6 +9,7 @@ export default makeStyles(() => ({
   mainBg: {
     backgroundColor: "#f9f9f9",
     width: "100vw",
+    height:"100vh",
     marginLeft:"15% !Important"
     // display: "flex",
     // justifyContent: "flex-start",
