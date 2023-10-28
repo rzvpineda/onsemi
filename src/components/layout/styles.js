@@ -1,5 +1,5 @@
 import { makeStyles } from '@material-ui/core/styles';
-// import colors from '../../themes/colors'
+import colors from '../../themes/colors'
 
 // import React from 'react'
 
@@ -30,21 +30,28 @@ export default makeStyles(() => ({
     color: "#000000",
     textDecoration: "none",
     fontSize: "14px",
-    transition: "0.5s ease-in-out",
-      WebkitTransition: " all 0.5s ease-in-out",
-      MozTransition: " all 0.5s ease-in-out",
-      OTransition: " all 0.5s ease-in-out",
+    // transition: "0.3s ease-in-out",
+    //   WebkitTransition: " all 0.3s ease-in-out",
+    //   MozTransition: " all 0.3s ease-in-out",
+    //   OTransition: " all 0.3s ease-in-out",
     '&:hover':{
-      paddingLeft:"10px",
-      transition: "0.5s ease-in-out",
-      WebkitTransition: " all 0.5s ease-in-out",
-      MozTransition: " all 0.5s ease-in-out",
-      OTransition: " all 0.5s ease-in-out"
+      // paddingLeft:"10px",
+      backgroundColor: `${colors.onsemiSlateBlue} !important`,
+      transition: "0.3s ease-in-out",
+      WebkitTransition: " all 0.3s ease-in-out",
+      MozTransition: " all 0.3s ease-in-out",
+      OTransition: " all 0.3s ease-in-out",
+      fontWeight:"600",
+      color: "white",
+      borderLeft: "5px solid #ff7920",
+      BoxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)"
     },
     '&.active':{
-      paddingLeft:"10px",
+      // paddingLeft:"10px",
       fontWeight:"600",
-      color:"#7A7A7A"
+      color: "white",
+      borderLeft: "5px solid #ff7920",
+      backgroundColor: colors.onsemiSlateBlue ,
     }
   },
   icons:{

@@ -25,8 +25,8 @@ function Layout({children}) {
     const [open, setOpen] = useState();
     // const [clickLink, setclickLink] = useState();
 
+    // this logic will handle the open and close of the collapse upon clicking
     const handleCollapse = (index) => {
-        // setOpen(!open);
         if (setOpen === index) {
             setOpen("")
         }
@@ -36,7 +36,6 @@ function Layout({children}) {
         else {
             setOpen(index)
         }
-        // console.log(index)
     };
 
     return (
@@ -62,14 +61,20 @@ function Layout({children}) {
                                 key={index}>
                                 <ListItemText className={classes.icons} key={index} primary={reportData.ParentLink}>
                                     {index === open ? <ExpandLessIcon /> : <ExpandMoreIcon /> }
+
                                 </ListItemText>
                             </ListItemButton>
                             {reportData.Reports.map((report) => (
                                 <Collapse in={index === open} timeout="auto" key={report.id}>
-                                    <List component="div" disablePadding className={`${classes.linkTag} `}>
-                                        <ListItemButton sx={{ pl: 4 }}  >
-                                            <NavLink className={`${classes.linkTag} `} to={'/content/'+ report.id} >{report.ReportName}</NavLink>
+                                    <List component="div" disablePadding  >
+                                        <ListItemButton sx={{ pl: 4 }}  
+                                            component={NavLink}
+                                            to={'/content/'+ report.id}
+                                            className={classes.linkTag}
+                                        >
+                                            {/* <NavLink className={`${classes.linkTag} `} to={'/content/'+ report.id} >{report.ReportName}</NavLink> */}
                                             {/* ${classes.isAcTive} => (isAcTive ? "active" : "inactive")   onClick={handleClick} onContextMenu={handleClick}*/}
+                                            {report.ReportName}
                                         </ListItemButton>
                                     </List>
                                 </Collapse>

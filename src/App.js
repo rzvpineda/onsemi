@@ -4,6 +4,7 @@ import Layout from "./components/layout/index";
 import Login from "./pages/login/index";
 import { createTheme, ThemeProvider, CssBaseline } from "@mui/material";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
+import Footer from "./components/footer";
 
 
 const onsemitheme = createTheme({
@@ -25,7 +26,7 @@ function App() {
         <BrowserRouter >
           <Layout >
             <Routes>
-              {/* <Route path="/" element={<Content />} /> */}
+              {/* <Route path="/" element={<Footer />} /> */}
               <Route path="/content/:type" element={<Content />} />
               <Route path="/login" element={<Login />} />
             </Routes>
